@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Announcement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Educational Announcement</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#student-profile">Student Profile</a></li>
+            <li><a href="#academic-calendar">Academic Calendar</a></li>
+            <li><a href="#messages">Messages</a></li>
+            <li><a href="#announcements">Announcements</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Clickable Header Bottom -->
+    <div class="header-bottom">
+        <a href="#announcements">Click here for Important Announcements!</a>
+    </div>
+
+    <!-- Sections (Hidden by Default) -->
+    <section id="home" class="visible">
+
+        
+        <section id="student-profile">
+            <h1>Student Profile</h1>
+        
+            <!-- About Us Dropdown -->
+            <details>
+                
+                <summary><h2>🔹 About Us</h2></summary>
+                <p><strong>Our Mission:</strong> We aim to provide quality education that empowers students to excel in academics and life.</p>
+                <p><strong>Our Vision:</strong> To be a globally recognized institution nurturing future leaders.</p>
+                <p><strong>Student Services:</strong> We offer academic advising, career counseling, and extracurricular support.</p>
+                
+            </details>
+        
+            <!-- Personal Information Dropdown -->
+            <details>
+                <summary><H2>🔹 Personal Information</H2></summary>
+                <p><strong>Name:</strong> Dearie Mae E. Urbano</p>
+                <p><strong>Address:</strong> Barangay Gapasan, Magsaysay, Occidental Mindoro</p>
+                <p><strong>Status:</strong> Single</p>
+                <p><strong>Age:</strong> 19</p>
+                <p><strong>Sex:</strong> Female</p>
+                <p><strong>Email Address:</strong>deariemaeurbano157@gmail.com</p>
+            </details>
+        
+        </section>
+        
+
+        <section id="academic-calendar">
+            <h2>Academic Calendar</h2>
+        
+            <details>
+                <summary>📅 Registration Deadline</summary>
+                <p><strong>Due Date:</strong> September 15, 2025</p>
+                <p>All students must complete their registration before this date.</p>
+            </details>
+        
+            <details>
+                <summary>📅 Enrollment Information</summary>
+                <p><strong>Due Date:</strong> October 1, 2025</p>
+                <p>Enrollment for the upcoming semester closes on this date.</p>
+            </details>
+        
+            <details>
+                <summary>📅 Upcoming School Events</summary>
+                <p><strong>Due Date:</strong> November 10, 2025</p>
+                <p>Submit participation forms for school events before this date.</p>
+            </details>
+        
+            <details>
+                <summary>📅 Exam Schedule</summary>
+                <p><strong>Midterm Exams:</strong> December 5-10, 2025</p>
+                <p><strong>Final Exams:</strong> March 15-20, 2026</p>
+            </details>
+        </section>
+        
+        <section id="messages">
+            <h2>Messages</h2>
+        
+            <!-- Inbox Dropdown -->
+            <details>
+                <summary>📩 Inbox</summary>
+                <p><strong>Message 1:</strong> Reminder: Tuition Fee Due Date</p>
+                <p><strong>Message 2:</strong> School Event Invitation</p>
+                <p><strong>Message 3:</strong> Exam Schedule Announcement</p>
+            </details>
+        
+            <!-- Sent Messages Dropdown -->
+            <details>
+                <summary>📤 Sent</summary>
+                <p><strong>Message 1:</strong> Inquiry about Scholarship</p>
+                <p><strong>Message 2:</strong> Confirmation of Class Enrollment</p>
+                <p><strong>Message 3:</strong> Request for Grade Report</p>
+            </details>
+        
+            <!-- Draft Messages Dropdown -->
+            <details>
+                <summary>📝 Draft</summary>
+                <p><strong>Message 1:</strong> Application for Student ID</p>
+                <p><strong>Message 2:</strong> Follow-up on Library Membership</p>
+            </details>
+        </section>
+        
+
+        <section id="announcements">
+            <h2><i class="bx bx-megaphone"></i> Latest Announcements</h2>
+        
+            <!-- School Registration Deadline -->
+            <details>
+                <summary><i class="bx bx-calendar-exclamation"></i> School Registration Deadline</summary>
+                <p><strong>📅 Deadline:</strong> September 15, 2025</p>
+                <p>All students must complete their registration before this date. Late registration may result in penalties.</p>
+            </details>
+        
+            <!-- Upcoming Sports Event -->
+            <details>
+                <summary><i class="bx bx-run"></i> Upcoming Sports Event</summary>
+                <p><strong>🏆 Event Date:</strong> October 5, 2025</p>
+                <p>Join us for the annual school sports event! Sign up at the student affairs office.</p>
+            </details>
+        
+            <!-- Midterm Exam Schedule -->
+            <details>
+                <summary><i class="bx bx-book-open"></i> Midterm Exam Schedule</summary>
+                <p><strong>📅 Exam Dates:</strong> December 5-10, 2025</p>
+                <p>The official midterm exam schedule has been posted. Make sure to review your subjects.</p>
+            </details>
+        </section>
+        
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📧 Email: contact@school.edu</p>
+    
+        <label for="facebook">🔗 Facebook:</label>
+        <select id="facebook" onchange="openFacebook(this.value)">
+            <option value="" selected disabled>Select an option</option>
+            <option value="https://www.facebook.com/school">Official Page</option>
+            <option value="https://www.facebook.com/groups/school">School Group</option>
+            <option value="https://www.facebook.com/messages/t/school">Message Us</option>
+        </select>
+    </section>
+    <script>
+        function openFacebook(url) {
+            if (url) {
+                window.open(url, '_blank'); // Open link in new tab
+            }
+        }
+    </script>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Program and Develop by: Dearie Mae E. Urbano.</p>
+    </footer>
+
+</body>
+</html>
